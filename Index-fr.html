@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakaria Ankira | Ingénieur Data</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="lang-switcher-corner">
+    <button id="lang-switch-en" class="lang-switch-btn">English</button>
+    <button id="lang-switch-fr" class="lang-switch-btn">Français</button>
+  </div>
+  <header>
+    <div class="container">
+      <div class="profile-photo-container">
+        <img src="profile.jpg" alt="Zakaria Ankira Photo" class="profile-photo" />
+      </div>
+      <h1>Zakaria Ankira</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#education">Éducation</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="home">
+      <div class="container">
+        <h2>Ingénieur Data passionné par la transformation digitale</h2>
+        <p>Diplômé de Mines Saint-Étienne | Expérimenté en pipelines de données, ETL et DevOps</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>À propos de moi</h2>
+        <p>
+          Ingénieur Data avec une solide expérience en développement backend Python, modélisation de données et pipelines ETL évolutifs. Maîtrise de PySpark, Hadoop, Django et SQL pour résoudre des problématiques métier complexes. Expérience avérée dans la construction de solutions industrielles, l'automatisation des workflows et la livraison d'outils analytiques en équipes pluridisciplinaires.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <h2>Expérience</h2>
+        <div class="experience">
+          <h3>Ingénieur Data | Stage de fin d'études</h3>
+          <p><strong>02/2024 – 07/2024 | Ugine, France</strong></p>
+          <p><strong>Framatome</strong></p>
+          <ul>
+            <li>Conception et développement d'une base de données SQL Server à partir de données de procédés industriels issues du Data Historian.</li>
+            <li>Mise en place d'un pipeline de données industriel (Airflow, SQL Server) pour nettoyer/traiter plus de 10 millions d'enregistrements du Data Historian.</li>
+            <li>Développement de rapports Power BI pour fournir des indicateurs clés de performance (KPI) aux équipes de production.</li>
+            <li>Assurance qualité des données : garantie de l'intégrité et de la conformité via des tests automatisés en Python.</li>
+            <li>Développement de plateformes web basées sur Django pour automatiser les workflows de simulation numérique et les processus ETL.</li>
+            <li><strong>Stack :</strong> Python (PySpark, Django), SQL Server, Airflow, React, Docker, GitLab CI/CD</li>
+          </ul>
+        </div>
+        <div class="experience">
+          <h3>Développeur Web & ML | Stage technique</h3>
+          <p><strong>07/2022 – 08/2022 | Maroc</strong></p>
+          <p><strong>Hob&Green</strong></p>
+          <ul>
+            <li>Développement d'une plateforme e-commerce avec WordPress et microservices Laravel pour le traitement des commandes en temps réel.</li>
+            <li>Automatisation des déclencheurs de commandes avec Python (Scikit-learn) et conception d'une base de données MySQL pour la gestion des produits.</li>
+            <li><strong>Stack :</strong> Python (Scikit-learn), PHP (Laravel), JavaScript, MySQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <h2>Éducation</h2>
+        <div class="education">
+          <h3>École des Mines de Saint-Étienne</h3>
+          <p>Master en Données et Systèmes Connectés</p>
+        </div>
+        <div class="education">
+          <h3>Académie Internationale de l'Aviation Civile</h3>
+          <p>Ingénieur d'État en Génie Informatique</p>
+        </div>
+        <div class="education">
+          <h3>Classes Préparatoires</h3>
+          <p>Mathématiques & Physique (MP)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projets</h2>
+        <div class="project">
+          <h3>API & Pipeline de Traitement de Données</h3>
+          <p>Développement d'un backend FastAPI pour automatiser la collecte, le nettoyage et le stockage des données dans des bases SQL, orchestré via Apache Airflow pour la planification des workflows.</p>
+          <p>Mise en place de tests unitaires Python pour valider la qualité des données, assurant 99% de précision pour l'analytique aval.</p>
+        </div>
+        <div class="project">
+          <h3>Pipelines de Données Météo</h3>
+          <p>Conception d'un pipeline batch avec Selenium pour extraire en temps réel des données météo d'un site web et les charger dans SQL Server.</p>
+          <p>Conteneurisation du pipeline avec Docker et déploiement multi-environnements pour une scalabilité et une reproductibilité optimales.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Compétences</h2>
+        <ul>
+          <li><strong>Data Engineering:</strong> ETL, Data Pipelines, Data Quality, Data Governance</li>
+          <li><strong>Big Data:</strong> PySpark, Hadoop, Spark, Airflow</li>
+          <li><strong>Cloud:</strong> Azure Data Factory, GCP BigQuery</li>
+          <li><strong>Bases de Données:</strong> SQL Server, PostgreSQL, MySQL, MongoDB, NoSQL, Data Modeling</li>
+          <li><strong>Programmation:</strong> Python, Java, SQL, Shell Scripting</li>
+          <li><strong>Backend/Web:</strong> Django, REST APIs, FastAPI, Microservices</li>
+          <li><strong>DevOps & CI/CD:</strong> Docker, Git, GitLab CI/CD, Jenkins</li>
+          <li><strong>BI & Analytics:</strong> Power BI, Tableau, Excel</li>
+          <li><strong>Outils:</strong> Airflow, Talend, SSIS</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email : <a href="mailto:zakaria.ankira.candidat@gmail.com">zakaria.ankira.candidat@gmail.com</a></p>
+        <p>Téléphone (Maroc) : <a href="tel:+212707454110">+212 707 454 110</a></p>
+        <p>Téléphone (France) : <a href="tel:+33662016080">+33 662 016 080</a></p>
+        <p><a href="https://www.linkedin.com/in/zakaria-ankira/">Profil LinkedIn</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Zakaria Ankira</p>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+  <!-- <script>
+    document.getElementById('lang-switch').addEventListener('click', function() {
+      var overlay = document.getElementById('fade-overlay');
+      overlay.style.pointerEvents = 'auto';
+      overlay.style.opacity = '1';
+      setTimeout(function() {
+        window.location.href = 'Index.html';
+      }, 600); // match the CSS transition duration
+    });
+    window.addEventListener('DOMContentLoaded', function() {
+      var overlay = document.getElementById('fade-overlay');
+      overlay.style.opacity = '0';
+      overlay.style.pointerEvents = 'none';
+    });
+  </script> -->
+</body>
+</html>

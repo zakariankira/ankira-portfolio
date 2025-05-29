@@ -1,0 +1,192 @@
+body {
+    font-family: 'Fira Mono', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: #e3e8ee;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  header {
+    background: #182b3a;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    padding: 32px 0 16px 0;
+    z-index: 100;
+  }
+  .profile-photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00e6e6;
+    box-shadow: 0 4px 24px rgba(0,230,230,0.15);
+    background: #182b3a;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+    color: #00e6e6;
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: #00e6e6;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    font-family: 'Fira Mono', monospace;
+  }
+  nav a:hover {
+    color: #ffb347;
+    border-bottom: 2px solid #00e6e6;
+  }
+  #lang-switch {
+    background: linear-gradient(90deg, #00e6e6 60%, #ffb347 100%);
+    color: #182b3a;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,230,230,0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  #lang-switch:hover {
+    background: linear-gradient(90deg, #ffb347 0%, #00e6e6 100%);
+    box-shadow: 0 4px 16px rgba(0,230,230,0.18);
+  }
+  section {
+    margin: 48px 0;
+    background: #1a2633;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,230,230,0.07);
+    padding: 32px 0 24px 0;
+    border-left: 6px solid #00e6e6;
+  }
+  h2 {
+    color: #00e6e6;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Fira Mono', monospace;
+  }
+  a {
+    color: #ffb347;
+    text-decoration: none;
+    transition: color 0.2s;
+  } 
+  h3 {
+    color: #ffb347;
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-family: 'Fira Mono', monospace;
+  }
+  ul, .education, .project, .experience {
+    margin-bottom: 18px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 7px;
+    font-size: 1.05rem;
+  }
+  footer {
+    background: #0f2027;
+    text-align: center;
+    padding: 18px 0 8px 0;
+    color: #6b7280;
+    font-size: 1rem;
+    border-top: 1px solid #203a43;
+    margin-top: 40px;
+  }
+  footer a {
+    color: #00e6e6;
+    text-decoration: underline;
+    transition: color 0.2s;
+  }
+  footer a:hover {
+    color: #ffb347;
+  }
+  .lang-switcher-corner {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 2000;
+    display: flex;
+    gap: 0;
+    background: #182b3a;
+    border-radius: 22px;
+    box-shadow: 0 2px 12px rgba(0,230,230,0.10);
+    overflow: hidden;
+  }
+  .lang-switch-btn {
+    border: none;
+    outline: none;
+    background: none;
+    color: #e3e8ee;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 24px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Fira Mono', monospace;
+  }
+  .lang-switch-btn.active, .lang-switch-btn:focus {
+    background: linear-gradient(90deg, #00e6e6 60%, #ffb347 100%);
+    color: #182b3a;
+  }
+  .lang-switch-btn:not(.active):hover {
+    background: #203a43;
+  }
+  html {
+    scroll-padding-top: 40px; /* Offset for anchor scrolls */
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 8px;
+    }
+    .profile-photo {
+      width: 80px;
+      height: 80px;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 18px 0 10px 0;
+    }
+    .lang-switcher-corner {
+      top: 8px;
+      right: 8px;
+      border-radius: 16px;
+    }
+    .lang-switch-btn {
+      font-size: 0.95rem;
+      padding: 7px 12px;
+    }
+  }
