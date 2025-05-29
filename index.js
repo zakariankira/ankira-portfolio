@@ -89,7 +89,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     const langBtn = document.getElementById('lang-switch');
     if (langBtn) {
       langBtn.onclick = () => {
-        smoothLanguageSwitchWithType(newLang === 'fr' ? 'Index.html' : 'Index-fr.html', newLang === 'fr' ? 'en' : 'fr');
+        smoothLanguageSwitchWithType(newLang === 'fr' ? 'index.html' : 'Index-fr.html', newLang === 'fr' ? 'en' : 'fr');
       };
     }
     document.querySelectorAll('nav a').forEach(anchor => {
@@ -125,7 +125,7 @@ const btnFr = document.getElementById('lang-switch-fr');
 if (btnEn) {
   btnEn.onclick = () => {
     if (document.documentElement.lang === 'en') return;
-    window.location.href = 'Index.html';
+    window.location.href = 'index.html';
   };
 }
 if (btnFr) {
@@ -139,6 +139,6 @@ if (btnFr) {
   if (langBtn) {
     langBtn.onclick = () => {
       const isFrench = document.documentElement.lang === 'fr';
-      smoothLanguageSwitchWithType(isFrench ? 'Index.html' : 'Index-fr.html', isFrench ? 'en' : 'fr');
+      smoothLanguageSwitchWithType(isFrench ? 'index.html' : 'Index-fr.html', isFrench ? 'en' : 'fr');
     };
   }
